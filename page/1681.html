@@ -1,0 +1,238 @@
+<header class="entry-header">
+ <h1 class="entry-title">
+  【AI绘图】SD实战案例之图生图与图片风格转绘
+ </h1>
+ <div class="entry-meta">
+  <span class="meta-author">
+   <a href="https://aqitanai.chat/author/Rainwong" title="Rainwong">
+    <img alt="" class="lazyload avatar avatar-96 photo" data-src="//aqitanai.chat/wp-content/themes/ripro-v2/assets/img/avatar.png" height="96" width="96">
+    </img>
+   </a>
+  </span>
+  <span class="meta-category">
+   <a href="https://aqitanai.chat/ai-knowledge" rel="category">
+    AI知识库
+   </a>
+  </span>
+  <span class="meta-date">
+   <time datetime="2025-05-04T16:41:19+08:00">
+    <i class="fa fa-clock-o">
+    </i>
+    2 月前
+   </time>
+  </span>
+  <span class="meta-views">
+   <i class="fa fa-eye">
+   </i>
+   223
+  </span>
+  <span class="meta-edit">
+  </span>
+ </div>
+</header>
+<div class="entry-content u-text-format u-clearfix">
+ <p>
+  今天想为大家介绍SD的图生图与图片风格转绘，这两种技术都是当前图像处理领域的前沿应用。
+ </p>
+ <p>
+  图生图，即通过一张现有的图片生成新的图片，它利用重绘幅度去更改图像特征，并生成具有相似风格或内容的新图像。
+ </p>
+ <p>
+  图片风格转绘，则是将一种风格的图片转换为另一种风格的图片，为图片创作和设计提供了无限可能。
+ </p>
+ <p>
+  我以SD在线网站哩布哩布为例，网站地址：https://www.liblib.art/
+ </p>
+ <p>
+  <strong>
+   1、首先我用文生圖生成了一張圖片
+  </strong>
+ </p>
+ <p>
+  利用阿奇老师免费给大家创建的智能体“
+  <strong>
+   SD提示词专家
+  </strong>
+  ”，该智能体发布在智谱清言：
+  <span class="wx_text_underline">
+   https://chatglm.cn/main/gdetail/67584986d8b873b7f6c33f5f
+  </span>
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-2997" decoding="async" fetchpriority="high" height="510" src="https://aqitanai.chat/wp-content/uploads/2025/05/1-41.jpg" width="758"/>
+ </p>
+ <p>
+  “SD提示词专家”是一个强大的工具，它能够为文生图的过程提供极大的帮助。通过利用这个专家系统，用户可以更加高效地进行创作。在文生图的过程中，我们常常需要一些提示词来激发灵感，明确创作方向。
+ </p>
+ <p>
+  <img alt="" class="alignnone wp-image-2999" decoding="async" height="1024" sizes="(max-width: 683px) 100vw, 683px" src="https://aqitanai.chat/wp-content/uploads/2025/05/2-38.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/2-38.png 1024w, https://aqitanai.chat/wp-content/uploads/2025/05/2-38-768x1152.png 768w" width="683"/>
+ </p>
+ <h4>
+  <strong>
+   2、图生图
+  </strong>
+ </h4>
+ <p>
+  我们以上面生成的这张图片为原始图片。
+ </p>
+ <p>
+  提示詞我只隨便的寫:一個可愛的女孩
+ </p>
+ <p>
+  <strong>
+   （1）、选择大模型
+  </strong>
+ </p>
+ <p>
+  像这类写实风格的照片，我选择的大模型是：
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-3000" decoding="async" height="91" src="https://aqitanai.chat/wp-content/uploads/2025/05/3-42.jpg" width="355"/>
+ </p>
+ <p>
+  <strong>
+   （2）、参数设置
+  </strong>
+ </p>
+ <p>
+  其它参数默认即可，最主要的是“重绘幅度”。
+ </p>
+ <p>
+  “重绘幅度”的数值大小对于原图的影响：低重绘幅度意味着修正原图，越高的重绘幅度对放大后的图像改变越大。0 不会改变原图，0.3 以下会基于原图稍微修正，超过 0.7 会对原图做出较大改变，1 会得到一个完全不同的图像。
+ </p>
+ <p>
+  比如，我生成的图片需要和原图改变不大，所以，我选择0.28的值。
+ </p>
+ <p>
+  <img alt="" class="alignnone wp-image-3001" decoding="async" height="402" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="https://aqitanai.chat/wp-content/uploads/2025/05/4-29.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/4-29.png 1626w, https://aqitanai.chat/wp-content/uploads/2025/05/4-29-768x301.png 768w, https://aqitanai.chat/wp-content/uploads/2025/05/4-29-1536x603.png 1536w" width="1024"/>
+ </p>
+ <p>
+  基本上来说，它们之间存在着高度的相似性，无论是从外观、功能还是使用体验上，都很难发现明显的差异。
+ </p>
+ <p>
+  再比如，我生成的图片需要和原图有较大的改动，我把重绘值设置为0.75。
+ </p>
+ <p>
+  <img alt="" class="alignnone wp-image-3002" decoding="async" height="440" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="https://aqitanai.chat/wp-content/uploads/2025/05/5-26.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/5-26.png 1775w, https://aqitanai.chat/wp-content/uploads/2025/05/5-26-768x330.png 768w, https://aqitanai.chat/wp-content/uploads/2025/05/5-26-1536x660.png 1536w" width="1024"/>
+ </p>
+ <p>
+  生成的图片已经和原图相差很大了，基本上是换了一个人。
+ </p>
+ <p>
+  <img alt="" class="alignnone wp-image-3005" decoding="async" height="1024" loading="lazy" sizes="auto, (max-width: 683px) 100vw, 683px" src="https://aqitanai.chat/wp-content/uploads/2025/05/6-22.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/6-22.png 1024w, https://aqitanai.chat/wp-content/uploads/2025/05/6-22-768x1152.png 768w" width="683"/>
+ </p>
+ <p>
+  <strong>
+   3、图片风格转绘
+  </strong>
+ </p>
+ <p>
+  <strong>
+   （1）、选择大模型
+  </strong>
+ </p>
+ <p>
+  因为我要把实体照片转为动漫图像，所以，我选择的大模型是动漫插画大模型：
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-3003" decoding="async" height="407" loading="lazy" sizes="auto, (max-width: 608px) 100vw, 608px" src="https://aqitanai.chat/wp-content/uploads/2025/05/7-20.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/7-20.png 608w, https://aqitanai.chat/wp-content/uploads/2025/05/7-20-300x200.png 300w" width="608"/>
+ </p>
+ <p>
+  <strong>
+   （2）、填写提示词，上传原图
+  </strong>
+ </p>
+ <p>
+  点击“图生图” 标签页，在“提示词”处根据图片内容，随便填写，在“图生图”处把原图上传。
+ </p>
+ <p>
+  提示词我都是随便的写:一个可爱的女孩。
+ </p>
+ <p>
+  其它参数设置如下图所示，重绘幅度我选择的是0.75的值。点击右上角的“开始生图”。
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-3006" decoding="async" height="1843" loading="lazy" sizes="auto, (max-width: 925px) 100vw, 925px" src="https://aqitanai.chat/wp-content/uploads/2025/05/8-22.jpg" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/8-22.jpg 925w, https://aqitanai.chat/wp-content/uploads/2025/05/8-22-768x1530.jpg 768w, https://aqitanai.chat/wp-content/uploads/2025/05/8-22-771x1536.jpg 771w" width="925"/>
+ </p>
+ <p>
+  <strong>
+   （3）、生成的图片如下：
+  </strong>
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-3013" decoding="async" height="1536" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="https://aqitanai.chat/wp-content/uploads/2025/05/10466cd.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/10466cd.png 1024w, https://aqitanai.chat/wp-content/uploads/2025/05/10466cd-768x1152.png 768w" width="1024"/>
+ </p>
+ <p>
+ </p>
+ <p>
+  <strong>
+   （4）、Lora模型辅助生图
+  </strong>
+ </p>
+ <p>
+  我们还可以添加“Lora”模型，以更好的生成各种动漫风格图片。点击“模型”标签页，在“Lora”中选择一款动漫风格的模型。比如，这里我选择“动漫”言情韩漫”。
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-3008" decoding="async" height="828" loading="lazy" sizes="auto, (max-width: 1018px) 100vw, 1018px" src="https://aqitanai.chat/wp-content/uploads/2025/05/10-14.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/10-14.png 1018w, https://aqitanai.chat/wp-content/uploads/2025/05/10-14-768x625.png 768w" width="1018"/>
+ </p>
+ <p>
+  接下來我們要图片风格转绘,用上面举例的这张图片为例，把这张图片转为动漫言情韓漫风格。
+ </p>
+ <p>
+  因为该Lora模型是在基础模型F.1的基础上创建的，所以我们需要选择的大模型为基础模型F.1：
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-3009" decoding="async" height="82" loading="lazy" src="https://aqitanai.chat/wp-content/uploads/2025/05/11-6.jpg" width="363"/>
+ </p>
+ <p>
+  在上一步图生图的基础上，我们添加Lora模型：
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-3010" decoding="async" height="461" loading="lazy" src="https://aqitanai.chat/wp-content/uploads/2025/05/12-3.jpg" width="416"/>
+ </p>
+ <p>
+  因为这个模型有触发词。所以要在提示词中加上这个触发词“hm”。
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-3011" decoding="async" height="856" loading="lazy" sizes="auto, (max-width: 933px) 100vw, 933px" src="https://aqitanai.chat/wp-content/uploads/2025/05/13-3.jpg" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/13-3.jpg 933w, https://aqitanai.chat/wp-content/uploads/2025/05/13-3-768x705.jpg 768w" width="933"/>
+ </p>
+ <p>
+  参数设置如下图所示：
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-3012" decoding="async" height="1409" loading="lazy" sizes="auto, (max-width: 913px) 100vw, 913px" src="https://aqitanai.chat/wp-content/uploads/2025/05/14-3.jpg" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/14-3.jpg 913w, https://aqitanai.chat/wp-content/uploads/2025/05/14-3-768x1185.jpg 768w" width="913"/>
+ </p>
+ <p>
+  完成设置后，点击右上角的“开始生图”。
+ </p>
+ <p>
+  生成的图片如下：
+ </p>
+ <p>
+ </p>
+ <p>
+  <img alt="" class="alignnone wp-image-3004" decoding="async" height="1024" loading="lazy" sizes="auto, (max-width: 683px) 100vw, 683px" src="https://aqitanai.chat/wp-content/uploads/2025/05/5b1.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/5b1.png 1024w, https://aqitanai.chat/wp-content/uploads/2025/05/5b1-768x1152.png 768w" width="683"/>
+ </p>
+ <p>
+  在图片创作中，我选择了0.65作为重绘幅度的参数。这个数值相对改变不会特别大，使得最终的作品在视觉上显得自然。这里提供了一个探索和尝试的机会。我相信，通过大家的共同努力和摸索，我们能够找到一个更为合适的重绘幅度，使得作品既保留了独特的风格，又能呈现出一种更加和谐、自然的视觉效果。
+ </p>
+ <div class="post-note alert alert-warning mt-2" role="alert">
+  <small>
+   <strong>
+    声明：
+   </strong>
+   本站所有文章，如无特殊说明或标注，均为本站原创发布。任何个人或组织，在未征得本站同意时，禁止复制、盗用、采集、发布本站内容到任何网站、书籍等各类媒体平台。如若本站内容侵犯了原著者的合法权益，可联系我们进行处理。
+  </small>
+ </div>
+ <div class="entry-tags">
+  <a class="btn btn-sm btn-light mr-2" href="https://aqitanai.chat/tag/sd%e5%ae%9e%e6%88%98%e6%a1%88%e4%be%8b" rel="tag">
+   SD实战案例
+  </a>
+  <a class="btn btn-sm btn-light mr-2" href="https://aqitanai.chat/tag/sd%e6%8f%90%e7%a4%ba%e8%af%8d%e4%b8%93%e5%ae%b6" rel="tag">
+   SD提示词专家
+  </a>
+  <a class="btn btn-sm btn-light mr-2" href="https://aqitanai.chat/tag/%e5%9b%be%e7%89%87%e9%a3%8e%e6%a0%bc%e8%bd%ac%e7%bb%98" rel="tag">
+   图片风格转绘
+  </a>
+ </div>
+</div>

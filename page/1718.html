@@ -1,0 +1,148 @@
+<header class="entry-header">
+ <h1 class="entry-title">
+  【AI绘图】SD绘画工具，几分钟打造个性化艺术字
+ </h1>
+ <div class="entry-meta">
+  <span class="meta-author">
+   <a href="https://aqitanai.chat/author/admin" title="admin">
+    <img alt="" class="lazyload avatar avatar-96 photo" data-src="//aqitanai.chat/wp-content/themes/ripro-v2/assets/img/avatar.png" height="96" width="96">
+    </img>
+   </a>
+  </span>
+  <span class="meta-category">
+   <a href="https://aqitanai.chat/ai-knowledge" rel="category">
+    AI知识库
+   </a>
+  </span>
+  <span class="meta-date">
+   <time datetime="2025-05-04T16:54:06+08:00">
+    <i class="fa fa-clock-o">
+    </i>
+    2 月前
+   </time>
+  </span>
+  <span class="meta-views">
+   <i class="fa fa-eye">
+   </i>
+   228
+  </span>
+  <span class="meta-edit">
+  </span>
+ </div>
+</header>
+<div class="entry-content u-text-format u-clearfix">
+ <p>
+  大家好！在之前的内容中，我们详细介绍了什么是AI绘画以及一些常用的AI绘画工具，相信大家对AI绘画已经有了一定的了解。那么接下来，我将为大家带来一个具体的案例演示，帮助大家更加直观地感受到AI绘图的魅力。
+ </p>
+ <p>
+  你是否也经常刷到那些创意十足的AI生成艺术字体图？将文字巧妙地融入其生成的画面中，让文字本身也充满艺术感。这种形式不仅新颖，还极具视觉冲击力。今天，我们就以Stable Diffusion（简称SD）这一强大的AI工具为例，带领大家一步步完成独特的春夏秋冬艺术字创作图！
+ </p>
+ <p>
+  打开SD软件（本次演示使用的liblib在线SD）
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-2954" decoding="async" fetchpriority="high" height="355" sizes="(max-width: 1265px) 100vw, 1265px" src="https://aqitanai.chat/wp-content/uploads/2025/05/图片1-3.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/图片1-3.png 1265w, https://aqitanai.chat/wp-content/uploads/2025/05/图片1-3-768x216.png 768w" width="1265"/>
+ </p>
+ <p>
+  选好大模型与提示词及相关参数
+ </p>
+ <p>
+  大模型 checkpoint：majicMIX realistic 麦橘写实 v7
+ </p>
+ <p>
+  正面提示词：Spring,leaves,Moss writing,water droplets,flying petals,flowers all around,bryophytes,small streams,panorama,vast green grass,crazy details,small insects,light refraction,light spots,high quality,masterpiece,8k,16k,high quality,close-up,depth of field,
+ </p>
+ <p>
+  负面提示次: ng_deepnegative_v1_75t,(badhandv4:1.2),(worst quality:2),(low quality:2),(normal quality:2),lowres,bad anatomy,(bad hands),watermark,many fingers,(broken hands),nsfw,EasyNegative,skin blemishes,(ugly:1.331),(duplicate:1.331),(morbid:1.21),(mutilated:1.21),mutated hands,(poorly drawn hands:1.5),(bad anatomy:1.21),(bad proportions:1.331),extra limbs,(disfigured:1.331),(extra legs:1.331),(fused fingers:1.61051),(too many fingers:1.61051),(unclear eyes:1.331),lowers,bad hands,missing fingers,extra digit,bad hands,missing fingers,(((extra arms and legs))),Steps: 28, Size: 512×768, , Sampler: Euler a+karras, CFG scale: 7
+ </p>
+ <p>
+  点生成图片，查看图片是否是我们想要背景
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-2956" decoding="async" height="528" sizes="(max-width: 1264px) 100vw, 1264px" src="https://aqitanai.chat/wp-content/uploads/2025/05/图片2-4.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/图片2-4.png 1264w, https://aqitanai.chat/wp-content/uploads/2025/05/图片2-4-768x321.png 768w" width="1264"/>
+ </p>
+ <p>
+  这里一次出来的三张跟我想要的“春”符合，就接着开始加入关键步骤ControlNet
+ </p>
+ <p>
+  此步骤之前得提前准备好一张白底黑字的图片,启动ControlNet,选择完美像素，允许预览，选择lineart,调整好预处理器，控制权重数值（为了控制文字与图片的融合程度建议在0.7-0.85之间）
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-2955" decoding="async" height="1042" sizes="(max-width: 1216px) 100vw, 1216px" src="https://aqitanai.chat/wp-content/uploads/2025/05/图片3-2.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/图片3-2.png 1216w, https://aqitanai.chat/wp-content/uploads/2025/05/图片3-2-768x658.png 768w" width="1216"/>
+ </p>
+ <p>
+  点击生成图片，开始抽图，选择自己想要的
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-2957" decoding="async" height="558" loading="lazy" sizes="auto, (max-width: 1266px) 100vw, 1266px" src="https://aqitanai.chat/wp-content/uploads/2025/05/图片4-3.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/图片4-3.png 1266w, https://aqitanai.chat/wp-content/uploads/2025/05/图片4-3-768x339.png 768w" width="1266"/>
+ </p>
+ <p>
+  我选择的图片如下：
+ </p>
+ <p>
+  <img alt="" class="alignnone wp-image-2958" decoding="async" height="683" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="https://aqitanai.chat/wp-content/uploads/2025/05/图片5-2.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/图片5-2.png 1365w, https://aqitanai.chat/wp-content/uploads/2025/05/图片5-2-300x200.png 300w, https://aqitanai.chat/wp-content/uploads/2025/05/图片5-2-768x512.png 768w" width="1024"/>
+ </p>
+ <p>
+  同样的步骤制作了另外的三个季度图：
+ </p>
+ <p>
+  提示词：Summer,water lilies,(transparent ice cubes text),moss,drizzle,white lotus,lotus scenery,lotus leavs,illustrations,green laves,vines,green lotus pools,water ripples,flying petals,lotus pools,product photography,miniature,perspective,panorama/depth loveliness,realism,masterpiece,resolution landscape,
+ </p>
+ <p>
+  负面提示词：ng_deepnegative_v1_75t,(badhandv4:1.2),(worst quality:2),(low quality:2),(normal quality:2),lowres,bad anatomy,(bad hands),watermark,many fingers,(broken hands),nsfw,EasyNegative,skin blemishes,(ugly:1.331),(duplicate:1.331),(morbid:1.21),(mutilated:1.21),mutated hands,(poorly drawn hands:1.5),(bad anatomy:1.21),(bad proportions:1.331),extra limbs,(disfigured:1.331),(extra legs:1.331),(fused fingers:1.61051),(too many fingers:1.61051),(unclear eyes:1.331),lowers,bad hands,missing fingers,extra digit,bad hands,missing fingers,(((extra arms and legs))),
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-2959" decoding="async" height="896" loading="lazy" src="https://aqitanai.chat/wp-content/uploads/2025/05/图片6-3.png" width="560"/>
+ </p>
+ <p>
+  正向提示词;wheat,wheat field,bumper harvest,ear of wheat,tree,green leaves,blue sky,outdoor,scenery,house,grass,bird,magnificent_architecture,multiple boys,farming culture,field work,warm colors,rich details,illustration,((masterpiece)),(((best quality)),
+ </p>
+ <p>
+  负面提示词：(worst quality, low quality:2),monochrome,zombie,overexposure,watermark,bad hand,extra hands,extra fingers,too many fingers,fused fingers,bad arm,distorted arm,extra arms,fused arms,extra legs,missing leg,disembodied leg,extra nipples,detached arm,liquid hand,inverted hand,disembodied limb,oversized head,extra body,extra navel,easynegative,(hair between eyes),duplicate,ugly,huge eyes,worst face,(bad and mutated hands:1.3),horror,geometry,bad_prompt,(bad hands),(missing fingers),multiple limbs,(interlocked fingers:1.2),Ugly Fingers,(extra digit and hands and fingers and legs and arms:1.4),(deformed fingers:1.2),(long fingers:1.2),(bad-artist-anime),bad-artist,bad hand,extra legs,(ng_deepnegative_v1_75t),grayscale,normal quality,lowres,sketches,low quality,NSFW,nsfw,nsfw,
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-2960" decoding="async" height="804" loading="lazy" sizes="auto, (max-width: 1205px) 100vw, 1205px" src="https://aqitanai.chat/wp-content/uploads/2025/05/图片7-2.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/图片7-2.png 1205w, https://aqitanai.chat/wp-content/uploads/2025/05/图片7-2-300x200.png 300w, https://aqitanai.chat/wp-content/uploads/2025/05/图片7-2-768x512.png 768w" width="1205"/>
+ </p>
+ <p>
+  正面提示词：snow scene,mist,chinese ancient architectural group,ultra-wide angle view,masterpiece,Professional,extremely detailed CG unity 8k wallpaper,official art,best quality,
+ </p>
+ <p>
+  负面提示词：worst quality,low quality:2,monochrome,watermark,easynegative,sketch,ugly,text,logo,bad_prompt,bad-picture-chill-75v,nsfw,bad_prompt,overexposure,
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-2961" decoding="async" height="512" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="https://aqitanai.chat/wp-content/uploads/2025/05/图片8-2.png" srcset="https://aqitanai.chat/wp-content/uploads/2025/05/图片8-2.png 768w, https://aqitanai.chat/wp-content/uploads/2025/05/图片8-2-300x200.png 300w" width="768"/>
+ </p>
+ <p>
+  注：以上图片均有使用部分lora，使用方法可参考阿奇谈AI的《AI商业实战攻略》中第三章有详细讲解：
+ </p>
+ <p>
+  <img alt="" class="alignnone size-full wp-image-2962" decoding="async" height="507" loading="lazy" src="https://aqitanai.chat/wp-content/uploads/2025/05/图片9-2.png" width="248"/>
+ </p>
+ <p>
+  <strong>
+   总结
+  </strong>
+ </p>
+ <p>
+  通过Stable Diffusion，我们可以用简单的文本提示生成充满艺术感的四季主题图像。从准备环境到生成图像，再到后期优化，每一步都可以灵活调整，达到想要的创作需求。无论是为了个人艺术表达，还是作为商业项目的一部分，AI生成的图像都充满了潜力与可能性。希望通过本文提供的步骤和技巧，能帮助你可以轻松上手Stable Diffusion，为你增加新的创作灵感！
+ </p>
+ <div class="post-note alert alert-warning mt-2" role="alert">
+  <small>
+   <strong>
+    声明：
+   </strong>
+   本站所有文章，如无特殊说明或标注，均为本站原创发布。任何个人或组织，在未征得本站同意时，禁止复制、盗用、采集、发布本站内容到任何网站、书籍等各类媒体平台。如若本站内容侵犯了原著者的合法权益，可联系我们进行处理。
+  </small>
+ </div>
+ <div class="entry-tags">
+  <a class="btn btn-sm btn-light mr-2" href="https://aqitanai.chat/tag/ai%e7%bb%98%e7%94%bb%e5%b7%a5%e5%85%b7" rel="tag">
+   AI绘画工具
+  </a>
+  <a class="btn btn-sm btn-light mr-2" href="https://aqitanai.chat/tag/ai%e8%89%ba%e6%9c%af%e5%ad%97" rel="tag">
+   AI艺术字
+  </a>
+  <a class="btn btn-sm btn-light mr-2" href="https://aqitanai.chat/tag/stable-diffusion" rel="tag">
+   stable diffusion
+  </a>
+ </div>
+</div>

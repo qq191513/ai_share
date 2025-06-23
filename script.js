@@ -79,11 +79,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const articlesToRender = allArticles.slice(startIndex, endIndex);
 
         articlesToRender.forEach(article => {
+            const pageId = article.href.split('/').pop().replace('.html', '');
+            const newHref = `show_content.html?page=${pageId}`;
+
             const articleHTML = `
                 <article class="article-card post post-grid">
                     <div class="entry-media">
                          <div class="placeholder">
-                             <a href="${article.href}" title="${article.title}">
+                             <a href="${newHref}" title="${article.title}">
                                 <img src="${article.imgSrc}" alt="${article.title}" class="lazyload">
                             </a>
                         </div>
@@ -91,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="entry-wrapper">
                         <header class="entry-header">
                             <h2 class="entry-title">
-                                <a href="${article.href}" title="${article.title}">${article.title}</a>
+                                <a href="${newHref}" title="${article.title}">${article.title}</a>
                             </h2>
                         </header>
                         <div class="entry-footer">
