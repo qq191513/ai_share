@@ -1,0 +1,386 @@
+/* Basic Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    color: #555;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+.login a {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login a:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Banner Section */
+.hero-banner {
+    background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1770&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-banner .hero h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero-banner .hero p {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 40px;
+}
+
+/* New Search Form */
+.hero-banner .search-form {
+    max-width: 650px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 5px 5px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.search-category-dropdown {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+    color: #333;
+    border-right: 1px solid #ddd;
+    font-weight: 500;
+}
+
+.search-category-dropdown span {
+    margin-right: 8px;
+}
+
+.hero-banner .search-form input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    color: #333;
+    padding: 15px;
+}
+
+.hero-banner .search-form input::placeholder {
+    color: #888;
+}
+
+.hero-banner .search-form button {
+    padding: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner .search-form button svg {
+    stroke: #555;
+    width: 20px;
+    height: 20px;
+}
+
+.hot-searches {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #d0d0d0;
+}
+
+.hot-searches a {
+    color: #fff;
+    margin: 0 3px;
+    text-decoration: none;
+}
+
+.hot-searches a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Area */
+.main-content-area {
+    padding-top: 30px;
+}
+
+/* Latest Articles */
+.latest-articles {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    display: flex;
+    align-items: baseline;
+}
+
+.section-header h2 {
+    font-size: 24px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.section-header span {
+    color: #999;
+    font-size: 14px;
+}
+
+.section-action-button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.article-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.article-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.placeholder {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.entry-media {
+    /* No longer need negative margins */
+}
+
+.placeholder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.entry-wrapper {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.entry-header {
+    flex-grow: 1;
+    border-bottom: none;
+}
+
+h2.entry-title {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+h2.entry-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.entry-footer {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.entry-meta {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    color: #999;
+    font-size: 14px;
+}
+
+/* Mobile Nav */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+    justify-content: space-around;
+}
+
+.mobile-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #555;
+    font-size: 12px;
+}
+
+.mobile-nav svg {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+    header nav, .login {
+        display: none;
+    }
+    .mobile-nav {
+        display: flex;
+    }
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.pagination .page-info,
+.pagination .page-number,
+.pagination .page-next {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #555;
+    background-color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .page-number:hover,
+.pagination .page-next:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination .page-number.active {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.pagination .page-prev.disabled,
+.pagination .page-next.disabled {
+    background-color: #f8f9fa;
+    color: #ced4da;
+    cursor: not-allowed;
+    border-color: #ddd;
+}
+
+.pagination .page-ellipsis {
+    padding: 8px 5px;
+    color: #555;
+}
+
+.page-numbers {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
